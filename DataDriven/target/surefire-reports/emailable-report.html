@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Data Driven</th></tr>
+<tr><td><a href="#t0">Bank Login Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">2,876</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Add Customer Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">7,571</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Open Account Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">29</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num attn">1</th><th class="num">0</th><th class="num">10,476</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Data Driven</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Bank Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vs.testcases.BankLoginTest</td><td><a href="#m0">bankLoginTest</a></td><td rowspan="1">1545019397525</td><td rowspan="1">2757</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Add Customer Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.vs.testcases.AddCustomerTest</td><td><a href="#m1">addCustomerTest</a></td><td rowspan="3">1545019405376</td><td rowspan="3">2550</td></tr><tr class="passedeven"><td><a href="#m2">addCustomerTest</a></td></tr><tr class="passedeven"><td><a href="#m3">addCustomerTest</a></td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Open Account Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.vs.testcases.OpenAccountTest</td><td><a href="#m4">openAccountTest</a></td><td rowspan="1">1545019407972</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Bank Login Test</h2><h3 id="m0">com.vs.testcases.BankLoginTest#bankLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Add Customer Test</h2><h3 id="m1">com.vs.testcases.AddCustomerTest#addCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Postcode=84512R5, Firstname=Rahul, Lastname=Mahajan, AlertText=Customer added successfully}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.vs.testcases.AddCustomerTest#addCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Postcode=451254R, Firstname=Vijay, Lastname=Shetty, AlertText=Customer added successfully}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.vs.testcases.AddCustomerTest#addCustomerTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Postcode=411019E, Firstname=Vinay, Lastname=Shetty, AlertText=Customer added successfully}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Open Account Test</h2><h3 id="m4">com.vs.testcases.OpenAccountTest#openAccountTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{Currency=Rupee, Customer=Vinay}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Skipping the test openAccountTest as runmode is No
+	at com.vs.listeners.CustomListener.onTestStart(CustomListener.java:22)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

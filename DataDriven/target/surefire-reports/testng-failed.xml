@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Data Driven]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.vs.listeners.CustomListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Open Account Test(failed)">
+    <classes>
+      <class name="com.vs.testcases.OpenAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openAccountTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.vs.testcases.OpenAccountTest -->
+    </classes>
+  </test> <!-- Open Account Test(failed) -->
+</suite> <!-- Failed suite [Data Driven] -->

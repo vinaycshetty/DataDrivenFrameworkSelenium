@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Data Driven" duration-ms="10493" started-at="2018-12-17T04:03:17Z" finished-at="2018-12-17T04:03:27Z">
+    <groups>
+    </groups>
+    <test name="Bank Login Test" duration-ms="2876" started-at="2018-12-17T04:03:17Z" finished-at="2018-12-17T04:03:20Z">
+      <class name="com.vs.testcases.BankLoginTest">
+        <test-method status="PASS" signature="bankLoginTest()[pri:0, instance:com.vs.testcases.BankLoginTest@4d1c00d0]" name="bankLoginTest" duration-ms="2757" started-at="2018-12-17T04:03:17Z" finished-at="2018-12-17T04:03:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bankLoginTest -->
+      </class> <!-- com.vs.testcases.BankLoginTest -->
+    </test> <!-- Bank Login Test -->
+    <test name="Add Customer Test" duration-ms="7571" started-at="2018-12-17T04:03:20Z" finished-at="2018-12-17T04:03:27Z">
+      <class name="com.vs.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:com.vs.testcases.AddCustomerTest@fa4c865]" name="addCustomerTest" duration-ms="2409" started-at="2018-12-17T04:03:20Z" data-provider="dp" finished-at="2018-12-17T04:03:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Postcode=411019E, Firstname=Vinay, Lastname=Shetty, AlertText=Customer added successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method status="PASS" signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:com.vs.testcases.AddCustomerTest@fa4c865]" name="addCustomerTest" duration-ms="2456" started-at="2018-12-17T04:03:22Z" data-provider="dp" finished-at="2018-12-17T04:03:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Postcode=451254R, Firstname=Vijay, Lastname=Shetty, AlertText=Customer added successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method status="PASS" signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:com.vs.testcases.AddCustomerTest@fa4c865]" name="addCustomerTest" duration-ms="2550" started-at="2018-12-17T04:03:25Z" data-provider="dp" finished-at="2018-12-17T04:03:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Postcode=84512R5, Firstname=Rahul, Lastname=Mahajan, AlertText=Customer added successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+      </class> <!-- com.vs.testcases.AddCustomerTest -->
+    </test> <!-- Add Customer Test -->
+    <test name="Open Account Test" duration-ms="29" started-at="2018-12-17T04:03:27Z" finished-at="2018-12-17T04:03:27Z">
+      <class name="com.vs.testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.vs.testcases.OpenAccountTest@24313fcc]" name="setUp" is-config="true" duration-ms="15755" started-at="2018-12-17T04:03:01Z" finished-at="2018-12-17T04:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="openAccountTest(java.util.Hashtable)[pri:0, instance:com.vs.testcases.OpenAccountTest@24313fcc]" name="openAccountTest" duration-ms="0" started-at="2018-12-17T04:03:27Z" data-provider="dp" finished-at="2018-12-17T04:03:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=Rupee, Customer=Vinay}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test openAccountTest as runmode is No]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test openAccountTest as runmode is No
+at com.vs.listeners.CustomListener.onTestStart(CustomListener.java:22)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:73)
+at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:559)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vs.testcases.OpenAccountTest@24313fcc]" name="tearDown" is-config="true" duration-ms="1968" started-at="2018-12-17T04:03:28Z" finished-at="2018-12-17T04:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vs.testcases.OpenAccountTest -->
+    </test> <!-- Open Account Test -->
+  </suite> <!-- Data Driven -->
+</testng-results>
