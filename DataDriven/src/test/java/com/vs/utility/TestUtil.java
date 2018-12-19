@@ -20,11 +20,10 @@ public class TestUtil extends TestBase{
 	
 	public static void captureScreenShot() throws IOException {
 		
-		
-		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
 		screenshotName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 		screenshotPath = System.getProperty("user.dir")+"\\target\\surefire-reports\\html\\"+screenshotName;
+		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(srcFile, new File(screenshotPath));
 	}
 	
