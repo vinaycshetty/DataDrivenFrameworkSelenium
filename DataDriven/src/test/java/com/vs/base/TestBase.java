@@ -24,6 +24,8 @@ import com.vs.utility.ExcelReader;
 import com.vs.utility.ExtentManager;
 import com.vs.utility.TestUtil;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestBase {
 
 	public static WebDriver driver;
@@ -49,14 +51,16 @@ public class TestBase {
 			OR.load(fis);
 			log.debug("OR File Loaded!!!!!");
 			if (config.getProperty("browser").equals("firefox")) {
-				System.setProperty("webdriver.gecko.driver",
-						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
+				/*System.setProperty("webdriver.gecko.driver",
+						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");*/
+				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				log.debug("FireFox driver Loaded!!!!!");
 			}
 			if (config.getProperty("browser").equals("Chrome")) {
-				System.setProperty("webdriver.chrome.driver",
-						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+				/*System.setProperty("webdriver.chrome.driver",
+						System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");*/
+				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				log.debug("Chrome driver Loaded!!!!!");
 			}
